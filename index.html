@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Even Odd</title>
+
+<style>
+
+body {
+font-family: Arial;
+background-color: #f0fff0;
+padding: 20px;
+}
+
+.card {
+background-color: white;
+padding: 10px;
+margin: 5px;
+display: inline-block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Even Numbers</h1>
+
+{% for e in even %}
+
+<div class="card">{{ e }}</div>
+
+{% endfor %}
+
+<h1>Odd Numbers</h1>
+
+{% for o in odd %}
+
+<div class="card">{{ o }}</div>
+
+{% endfor %}
+
+</body>
+</html>
